@@ -5,4 +5,5 @@ module net.bytestudio {
     opens net.bytestudio to javafx.fxml;
     exports net.bytestudio;
     exports net.bytestudio.handler;
+    exports net.bytestudio.scene;
 }
