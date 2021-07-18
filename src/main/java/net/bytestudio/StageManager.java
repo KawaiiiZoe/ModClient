@@ -7,11 +7,10 @@ import net.bytestudio.scene.ClientScene;
 import net.bytestudio.scene.ErrorScene;
 import net.bytestudio.scene.IScene;
 
-//Todo: Create this class and make the content of scene change able for the project.
 public class StageManager {
 
     private IScene currentScene;
-    private Stage stage;
+    private final Stage stage;
 
     public StageManager(Stage stage) {
         this.stage = stage;

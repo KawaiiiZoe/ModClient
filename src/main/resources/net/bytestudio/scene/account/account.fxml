@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXToggleButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
@@ -10,7 +11,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" styleClass="background" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.bytestudio.handler.AccountPointer">
    <children>
@@ -43,7 +43,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="switch_about" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" styleClass="img-btn">
+            <ImageView fx:id="close_program" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" styleClass="img-btn">
                <HBox.margin>
                   <Insets left="40.0" right="40.0" />
                </HBox.margin>
@@ -58,7 +58,15 @@
       </HBox>
       <AnchorPane layoutY="82.0" prefHeight="620.0" prefWidth="600.0" styleClass="body">
          <children>
-            <AnchorPane fx:id="settings_pane" layoutX="14.0" layoutY="14.0" prefHeight="590.0" prefWidth="570.0" visible="false" />
+            <AnchorPane fx:id="settings_pane" layoutX="14.0" layoutY="14.0" prefHeight="590.0" prefWidth="570.0" visible="false">
+               <children>
+                  <Label layoutX="40.0" layoutY="25.0" styleClass="headline" text="Settings" />
+                  <Label layoutX="40.0" layoutY="100.0" styleClass="text-head" text="Launch by startup" />
+                  <JFXToggleButton fx:id="setup_startup" layoutX="285.0" layoutY="85.0" text=" " toggleColor="#34b69b" toggleLineColor="#35b599b4" />
+                  <Label layoutX="40.0" layoutY="180.0" styleClass="text-head" text="Auto updating" />
+                  <JFXToggleButton fx:id="setup_update" layoutX="285.0" layoutY="165.0" text=" " toggleColor="#34b69b" toggleLineColor="#35b599b4" />
+                  <Label fx:id="version_text1" layoutX="420.0" layoutY="570.0" styleClass="small-text" text="Version: 180721.01b" />
+               </children></AnchorPane>
             <AnchorPane fx:id="sign_in_page" layoutX="15.0" layoutY="15.0" prefHeight="590.0" prefWidth="570.0">
                <children>
                   <Label layoutX="40.0" layoutY="25.0" styleClass="headline" text="Sign In" />
@@ -81,7 +89,11 @@
                   <Label fx:id="version_text" layoutX="420.0" layoutY="570.0" styleClass="small-text" text="Version: 180721.01b" />
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="sign_up_page" layoutX="15.0" layoutY="15.0" prefHeight="590.0" prefWidth="570.0" visible="false" />
+            <AnchorPane fx:id="sign_up_page" layoutX="15.0" layoutY="15.0" prefHeight="590.0" prefWidth="570.0" visible="false">
+               <children>
+                  <Label layoutX="170.0" layoutY="295.0" styleClass="headline" text="Current not working" />
+                  <Label fx:id="version_text2" layoutX="420.0" layoutY="570.0" styleClass="small-text" text="Version: 180721.01b" />
+               </children></AnchorPane>
          </children>
       </AnchorPane>
    </children>
