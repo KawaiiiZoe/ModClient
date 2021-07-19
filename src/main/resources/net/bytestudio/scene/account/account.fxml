@@ -85,7 +85,7 @@
                      </image>
                   </ImageView>
                   <Button fx:id="sign_in_btn" layoutX="210.0" layoutY="400.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="btn" text="Sign In" />
-                  <Button layoutX="210.0" layoutY="480.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="btn" text="Guest" />
+                  <Button fx:id="guest_btn" layoutX="210.0" layoutY="480.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="btn" text="Guest" />
                   <Label fx:id="version_text" layoutX="420.0" layoutY="570.0" styleClass="small-text" text="Version: 180721.01b" />
                </children>
             </AnchorPane>

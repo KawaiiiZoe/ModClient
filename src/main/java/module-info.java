@@ -7,4 +7,5 @@ module net.bytestudio {
     exports net.bytestudio;
     exports net.bytestudio.handler;
     exports net.bytestudio.scene;
+    exports net.bytestudio.editor;
 }
